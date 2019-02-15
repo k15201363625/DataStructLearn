@@ -26,6 +26,12 @@ public class MyArray<E> {
         this(10);
     }
 
+    public MyArray(E[] arr){
+        data = (E[])new Object[arr.length];
+        for(int i=0;i<arr.length;i++)
+            data[i] = arr[i];
+        size = arr.length;
+    }
     //在add remove中使用
     private void resize(int newCapicity){
         E[] tmpdata = (E[]) new Object[newCapicity];
@@ -157,6 +163,14 @@ public class MyArray<E> {
         res.append("]\n");
 
         return res.toString();//类型转换
+    }
+
+    public void swap(int i,int j){
+        if((i<0||i>=size)||(j<0||j>=size))
+            throw new IllegalArgumentException("index error in swap process");
+        E tmp = data[i];
+        data[i] = data[j];
+        data[j] = tmp;
     }
 
 

@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/ARRAY/ARRAY.iml" filepath="$PROJECT_DIR$/ARRAY/ARRAY.iml" />
       <module fileurl="file://$PROJECT_DIR$/BST/BST.iml" filepath="$PROJECT_DIR$/BST/BST.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataStructLearn.iml" filepath="$PROJECT_DIR$/DataStructLearn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Priorityqueue_Heap/Priorityqueue_Heap.iml" filepath="$PROJECT_DIR$/Priorityqueue_Heap/Priorityqueue_Heap.iml" />
       <module fileurl="file://$PROJECT_DIR$/Recursive/Recursive.iml" filepath="$PROJECT_DIR$/Recursive/Recursive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SegmentTree/SegmentTree.iml" filepath="$PROJECT_DIR$/SegmentTree/SegmentTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Trie/Trie.iml" filepath="$PROJECT_DIR$/Trie/Trie.iml" />
     </modules>
   </component>
 </project>
