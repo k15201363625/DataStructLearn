@@ -1,7 +1,7 @@
 public class BstMap <K extends Comparable<K>,V> implements Map<K,V> {
 //使用泛型就要全部指明类型 否则重载会变成Object
-    Node root;
-    int size;
+    private Node root;
+    private int size;
 
     private class Node{
         K key;
@@ -11,11 +11,19 @@ public class BstMap <K extends Comparable<K>,V> implements Map<K,V> {
         public Node(K key,V value){
             this.key = key;
             this.value = value;
+            left = null;
+            right = null;
+        }
+        public Node(){
+            key = null;
+            value = null;
+            left = null;
+            right = null;
         }
     }
 
     public BstMap(){
-        root = null;
+        root = new Node();
         size = 0;
     }
 
@@ -123,7 +131,9 @@ public class BstMap <K extends Comparable<K>,V> implements Map<K,V> {
     }
     @Override
     public V remove(K key) {
-        return null;
+        V res = get(key);
+        root = remove(root,key);
+        return res;
     }
 
     @Override
